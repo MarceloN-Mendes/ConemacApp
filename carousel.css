@@ -1,0 +1,53 @@
+.carousel-section {
+    width: min(100%, 1100px);
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    box-sizing: border-box;
+}
+.poems-section { margin: 1rem auto 2rem; }
+.carousel-viewport {
+    min-width: 0;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primaryColor400--) var(--primaryColor100--);
+    padding: .6rem .3rem 1rem;
+    scroll-snap-type: x mandatory;
+}
+.carousel-track { scroll-snap-align: start; }
+.carousel-track > .cards { scroll-snap-align: start; }
+.carousel-btn {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--primaryColor700--);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: background .2s, transform .2s;
+}
+.carousel-btn:hover, .carousel-btn:focus-visible {
+    background: var(--primaryColor500--);
+    transform: scale(1.06);
+}
+#contPoema { width: 100%; }
+#contPoema h2 {
+    color: var(--primaryColor700--);
+    font-family: var(--titularText--);
+    font-size: 2.5rem;
+}
+.intro-viewport { scroll-snap-type: x mandatory; }
+.intro-track { display: flex; gap: 1rem; width: max-content; }
+.intro-track .cardintrodução { flex: 0 0 min(24rem, 75vw); scroll-snap-align: center; box-sizing: border-box; }
+@media (max-width: 520px) {
+    .carousel-section { gap: .25rem; }
+    .carousel-btn { flex-basis: 34px; width: 34px; height: 34px; }
+    .cards { flex-basis: 125px; width: 125px; height: 160px; }
+}

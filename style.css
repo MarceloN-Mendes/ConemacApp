@@ -1,0 +1,274 @@
+/*EDICAO BASICA*/
+* {margin:0; padding:0; list-style:none; vertical-align:baseline;}
+
+/*variaveis*/
+
+:root {
+    --primaryColor100--: #EDEBFD;
+    --primaryColor200--: #C4BFFA;
+    --primaryColor300--: #9C92F6;
+    --primaryColor400--: #7563F1;
+    --primaryColor500--: #502BE9;
+    --primaryColor600--: #31159C;
+    --primaryColor700--: #150651;
+    --secondaryColor700--: #37094B;
+
+    /*text-font*/
+    --mainText--: "Fira Sans", sans-serif;
+    --titularText--: "Amatic SC", sans-serif;
+
+    /*text-color*/
+    --negativeColor--: white;
+    --positiveColor--: var(--primaryColor400--);
+
+}
+
+
+.hide{
+    display: none !important;
+}
+
+body{
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: fixed;
+}
+body.modal-open { overflow: hidden; }
+
+.container{
+    display: flex;
+    height:min-content;
+    width: 100%;
+    font-family: var(--mainText--);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*PARTES*/
+
+#cabecalho{
+    background-color: var(--primaryColor700--);
+    justify-content: center;
+    
+    font-family: var(--titularText--);
+    font-weight: 700;
+    font-style: normal;
+    color: var(--negativeColor--);
+    font-size: 1rem;
+
+    padding: 0.1rem;
+}
+
+#corpo{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+    margin-top: 10px;
+}
+
+#introducao{
+    
+    justify-content: space-evenly;
+    display: flex;
+    height: min-content;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.cardintrodução{
+    background-color: var(--primaryColor100--);
+    
+    font-family: var(--mainText--);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primaryColor700--);
+    font-size: 1.2rem;
+    text-align: center;
+
+
+    width: 24rem;
+    height: 14rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: solid 3px var(--primaryColor500--);
+    border-radius: 10px;
+    /*box-shadow: var(--primaryColor700--) 6px 2px 9px 0px;*/
+    display: flex;
+    align-items: center;
+}
+
+#contPoema{
+    flex-direction: column;
+    align-items: center;
+}
+
+#poemas{
+    margin-top: 8px;
+    font-family: var(--titularText--);
+    font-weight: 700;
+    color: var(--primaryColor700--);
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+
+.cards{
+    flex: 0 0 150px;
+    width: 150px;
+    height: 180px;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--primaryColor700--);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font: 700 1.2rem var(--titularText--);
+    transition: transform .2s ease, background-color .2s ease;
+}
+.cards:hover, .cards:focus-visible {
+    transform: translateY(-4px);
+    background-color: var(--primaryColor500--);
+    outline: 3px solid var(--primaryColor300--);
+}
+.cards img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.cards span { line-height: 1.1; text-align: center; }
+
+
+.contentPoema {
+    position: relative;
+
+    width: min(70vw, 900px);
+    max-height: 85vh;
+    box-sizing: border-box;
+    padding: 2.5rem 3rem;
+
+    background-color: var(--primaryColor100--);
+    color: var(--primaryColor700--);
+
+    font-family: var(--mainText--);
+    font-size: 1rem;
+    line-height: 1.8;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border-radius: 15px;
+    border-bottom: 4px solid var(--primaryColor500--);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cardExibir {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3.5rem 2rem 2rem;
+
+    background-color: rgba(21, 6, 81, 0.8);
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentPoema h3 {
+    font-family: var(--titularText--);
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* BOTÃO DE FECHAR */
+
+.cardExibir .close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    z-index: 10000;
+
+    transition: transform 0.2s ease;
+}
+
+/* Quando o X é uma imagem */
+
+.cardExibir img.close {
+    object-fit: contain;
+}
+
+/* Quando o X é o elemento <i> vazio */
+
+.cardExibir i.close::before {
+    content: "\00D7";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.cardExibir .close:hover {
+    transform: scale(1.15);
+}
+
+.contentPoema::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contentPoema::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 15px 0;
+}
+
+.contentPoema::-webkit-scrollbar-thumb {
+    background-color: var(--primaryColor500--);
+    border-radius: 20px;
+
+    border: 3px solid var(--primaryColor100--);
+    background-clip: content-box;
+}
+
+.contentPoema::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primaryColor400--);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+@media (max-width: 600px) {
+    .contentPoema { width: 94vw; padding: 2rem 1.2rem; font-size: .95rem; }
+    .cardExibir { padding: 3rem .5rem 1rem; }
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/onibi.png" type="image/png">
+    
+    <title>Souls</title>
+</head>
+<body>
+    <header id="cabecalho" class="container">
+        <h1>Pedaços da minha Alma</h1>
+    </header>
+    <main id="corpo" class="container">
+
+        <section id="introducao" class="carousel-section">
+            <button class="carousel-btn prev" type="button" aria-label="Introdução anterior">&#10094;</button>
+            <div class="carousel-viewport intro-viewport">
+                <div class="carousel-track intro-track">
+                    <article class="cardintrodução"><p>Olá, Bom dia, Boa tarde, Boa noite caro leitor, sou Marcelo Mendes escritor dos poemas que seguem abaixo. </p></article>
+                    <article class="cardintrodução"><p>Espero que leia com calma e sinta cada escrita, e que retire daqui uma parte boa de mim com alguma reflexão ou ajuda em seus sentimentos.</p></article>
+                    <article class="cardintrodução"><p>Eu trato meus poemas como parte da minha alma, sendo expressões dos meus pensamentos e sentimentos, eu espero que goste de mim e os pedaços que deixo aqui.</p></article>
+                </div>
+            </div>
+            <button class="carousel-btn next" type="button" aria-label="Próxima introdução">&#10095;</button>
+        </section>
+
+        <div class="container" id="contPoema">
+            <h2>Poemas</h2>
+        
+            <section class="carousel-section poems-section" aria-label="Carrossel de poemas">
+                <button class="carousel-btn prev" type="button" aria-label="Poemas anteriores">&#10094;</button>
+                <div class="carousel-viewport" id="poemasViewport">
+                <div id="poemas" class="carousel-track">
+                <button type="button" class="cards" id="caridadeCard" aria-label="Abrir poema Caridade"><img src="" alt="" hidden><span>Caridade</span></button>
+                <button type="button" class="cards" id="confusaoCard" aria-label="Abrir poema Confusão"><img src="" alt="" hidden><span>Confusão</span></button>
+                <button type="button" class="cards" id="pensamentosCard" aria-label="Abrir poema Pensamentos"><img src="" alt="" hidden><span>Pensamentos</span></button>
+                <button type="button" class="cards" id="dec1Card" aria-label="Abrir poema Declarações 1"><img src="" alt="" hidden><span>Declarações 1</span></button>
+                <button type="button" class="cards" id="dec2Card" aria-label="Abrir poema Declarações 2"><img src="" alt="" hidden><span>Declarações 2</span></button>
+                <button type="button" class="cards" id="gradesCard" aria-label="Abrir poema Grades"><img src="" alt="" hidden><span>Grades</span></button>
+                <button type="button" class="cards" id="enlouquecerCard" aria-label="Abrir poema O mal que escolhi você"><img src="img/cigarro.png" alt=""><span>O mal que escolhi você</span></button>
+                <button type="button" class="cards" id="canetaCard" aria-label="Abrir poema Caneta"><img src="img/caneta.png" alt=""><span>Caneta</span></button>
+                <button type="button" class="cards" id="hollowCard" aria-label="Abrir poema Hollow"><img src="" alt="" hidden><span>Hollow</span></button>
+                <button type="button" class="cards" id="tempoCard" aria-label="Abrir poema A tempo"><img src="img/tempo.png" alt=""><span>A tempo</span></button>
+                <button type="button" class="cards" id="eusCard" aria-label="Abrir poema EuS"><img src="img/costasJuan.png" alt=""><span>EuS</span></button>
+                <button type="button" class="cards" id="promessasCard" aria-label="Abrir poema Promessas"><img src="img/prometo.jpg" alt=""><span>Promessas</span></button>
+                <button type="button" class="cards" id="luzesCard" aria-label="Abrir poema Luzes"><img src="img/palmeiras.png" alt=""><span>Luzes</span></button>
+                <button type="button" class="cards" id="pedraCard" aria-label="Abrir poema A Pedra no Rio"><img src="img/flores.jpg" alt=""><span>A Pedra no Rio</span></button>
+                <button type="button" class="cards" id="LusiadasCard" aria-label="Abrir poema Lusíadas"><img src="img/flor.png" alt=""><span>Lusíadas</span></button>
+                <button type="button" class="cards" id="caraCard" aria-label="Abrir poema A cara"><img src="" alt="" hidden><span>A cara</span></button>
+                </div>
+                </div>
+                <button class="carousel-btn next" type="button" aria-label="Próximos poemas">&#10095;</button>
+            </section>
+        </div>
+    </main>
+    <footer id="rodape" class="container">
+
+    </footer>
+    <div id="cardExibir">
+        <div class="hide cardExibir" id="caridade">
+            <div class="contentPoema">
+                <h3>Caridade</h3>
+                <p>Triste parabenizar, rir e ainda escutar o som da fome</p>
+                <p>Sentir o pesar de não ter nada além de palavras</p>
+                <p>A frustração carregada é perdoável</p>
+                <p>Sinto em dizer que é incrível, em tom entusiasta,</p>
+                <p>E, no fim, lhe disser: não há nada além de falas</p>
+                <p>Gostaria que, nesse mundo frio e vazio,</p>
+                <p>Empatia enchesse barriga</p>
+                <p>Infelizmente, sigo em prol da ignorância,</p>
+                <p>Socialmente aceita, enquanto me vendo</p>
+                <p>Sem valores abandonados com o tempo</p>
+                <p>E sem visão de pessoas</p>
+                <p>Minimizadas pelo calejamento de conhecimentos</p>
+                <p>Hoje, não lhe entrego nada.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="confusao">
+            <div class="contentPoema">
+                <h3>Confusão</h3>
+                <p>Foda, não sei começar.</p>
+                <p>Uma merda começar a escrever.</p>
+                <p>É tipo se declarar.</p>
+                <p>Como você coloca tudo que sente em frases?</p>
+                <p>Sentimentos são tão irreais quanto um macaco voando.</p>
+                <p>Você acaba usando palavras tão bonitas pra coisas tão simples.</p>
+                <p>Você já ouviu a simplicidade na voz de uma criança?</p>
+                <p>A pureza dela ao agir e dizer.</p>
+                <p>O ser que somos nos torna cruel.</p>
+                <p>Infelizmente, vou ter que discordar de Maquiavel.</p>
+                <p>No final, não há como dizer a verdade.</p>
+                <p>Não era nem isso que queria dizer.</p>
+                <p>Penso demais sobre coisas que são ditas como filosóficas.</p>
+                <p>Sou somente uma forma de me espelhar no que os outros esperam.</p>
+                <p>Eu não sei escrever.</p>
+                <p>Escrevo-vos, meu senhor: declarai a mim teus amores.</p>
+                <p>E me declaro escritor.</p>
+                <p>Escritor é aquele que se faz em tinta.</p>
+                <p>Eu não faço isso, só escrevo algo sonoro, bonito.</p>
+                <p>Ou tento fazer ele ser belo.</p>
+                <p>Belo, outra palavra difícil.</p>
+                <p>O comum se torna tão vulgar que escrever de forma complexa se torna belo.</p>
+                <p>No final, belo é aquilo que a gente quer, né?</p>
+                <p>A forma do ser humano cruel, escuro, triste, sucumbida em que erros é belo.</p>
+                <p>Parabéns, não escreveu, senhor.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="pensamentos">
+            <div class="contentPoema">
+                <h3>Pensamentos Mudanos</h3>
+                <p>Usei e abusei de tua forma.</p>
+                <p>Cansei de usá-la.</p>
+                <p>Menti a mim mais de uma vez.</p>
+                <p>Mudei, infelizmente,</p>
+                <p>para insatisfação de mim mesmo.</p>
+                <p>Mudo o tempo presente para um passado recente.</p>
+                <p>Trato o agora com desejo de amanhã continuar.</p>
+                <p>Mudei a minha forma.</p>
+                <p>Não mais tua, mas sim minha.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="dec1">
+            <div class="contentPoema">
+                <h3>Declarações 1</h3>
+                <p>Acho fantástico o fato</p>
+                <p>De que tantos poetas</p>
+                <p>Tentaram descrever</p>
+                <p>Tuas musas como as mais belas,</p>
+                <p>Mas, para infelicidade delas,</p>
+                <p>Nada seriam elas</p>
+                <p>Se teus admiradores antes</p>
+                <p>Conhecessem a ti.</p>
+                <p>Daí, sim, conheceriam a verdadeira</p>
+                <p>Bela mulher.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="dec2">
+            <div class="contentPoema">
+                <h3>Declarações 2</h3>
+                <p>Factual, de fato.</p>
+                <p>A redundância de quaisquer elogios</p>
+                <p>Quando se trata de ti.</p>
+                <p>Tão pleonástico quanto deste texto se faz a primeira frase.</p>
+                <br>
+                <p>Ditarei aqui milhares de elogios.</p>
+                <p>Contudo, não se faz necessário.</p>
+                <p>Gastaria um tempo supérfluo</p>
+                <p>Falando o óbvio,</p>
+                <p>Um tempo tal qual gasto por ti</p>
+                <p>Escolhendo sobre si</p>
+                <p>Uma sonoplastia à tua própria altura.</p>
+                <br>
+                <p>Novamente sobre fatos,</p>
+                <p>Me esforcei para de ti obter um destaque.</p>
+                <p>Porém, em percussão deste texto,</p>
+                <p>Percebo que todo destaque que quaisquer almejadores de ti</p>
+                <p>Possam desejar, EU possuo, e possuí,</p>
+                <p>Da tua atenção, seu tempo;</p>
+                <p>De sua voz, o riso.</p>
+                <p>E, tal qual se fazem redundantes os elogios,</p>
+                <p>Este texto se faz fútil,</p>
+                <p>Pois, indiferente do que me pus a pensar:</p>
+                <p>"Ela é linda, magnífica, bela",</p>
+                <p>Todos estes já foram ditos por outros.</p>
+                <p>Porém, em meio a outros,</p>
+                <p>Eu estou a te ouvir.</p>
+                <p>Eu fui a estar ali.</p>
+                <br>
+                <p>Por isso, digo:</p>
+                <p>Enaltecer o óbvio sobre ti, sua beleza,</p>
+                <p>Poderia me fazer mais um.</p>
+                <p>Porém, quando tu me dás um lado a sentar contigo,</p>
+                <p>Me faz teu.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="grades">
+            <div class="contentPoema">
+                <h3>Grades</h3>
+                <p>Nossa liberdade se torna pauta</p>
+                <p>Enquanto lhe tratam fundamental,</p>
+                <p>Porém, não vejo no fundamental</p>
+                <p>O que nas escolas não fazem essencial.</p>
+                <br>
+                <p>Lhe fazem mostrar que merece alta,</p>
+                <p>Que está curado de suas vontades,</p>
+                <p>Ser livre abdicando da sua liberdade.</p>
+                <br>
+                <p>Para isso, ande em vossas trilhas,</p>
+                <p>Descritas por questões num papel.</p>
+                <p>Abra mão do que pensas</p>
+                <p>E, em efeito abelha, leve-lhes vosso mel.</p>
+                <br>
+                <p>Em sistema operário,</p>
+                <p>Construa seu fim.</p>
+                <p>Deixem retirar mais de si.</p>
+                <p>Faça o necessário para as bases de um futuro</p>
+                <p>Donde jogos com ações vorazes são esperança.</p>
+                <br>
+                <p>Não os deixem se sujar, isso não é necessário.</p>
+                <p>Alegre-os: vai nos dar a chance de viver de novo,</p>
+                <p>Nos tornar mais um de vossos fantoches.</p>
+                <br>
+                <p>Aos infelizados que não passarem,</p>
+                <p>Créditos subirão mais rápido.</p>
+                <p>Em sua direção?</p>
+                <p>O próprio diabo.</p>
+                <br>
+                <p>Ah, e não se esqueça: tudo isso em nome da SUA liberdade!</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="enlouquecer">
+            <div class="contentPoema">
+                <h3>O mal que escolhi você</h3>
+                <p>Eu vou enlouquecer</p>
+                <p>Se não esquecer de você,</p>
+                <p>Porque, daquela vez,</p>
+                <p>Eu prometi.</p>
+                <p>Viva por nós,</p>
+                <p>O que eu não posso fazer.</p>
+                <p>Faria de tudo pra apagar</p>
+                <p>As palavras em que um dia acreditei.</p>
+                <p>Minhas escolhas fatais</p>
+                <p>Carregaram a mim</p>
+                <p>Todas suas consequências.</p>
+                <p>Por ti sorri,</p>
+                <p>Com dor,</p>
+                <p>Para, naquele dia, você elogiar</p>
+                <p>Minha falsa alegria.</p>
+                <p>Sufocado, eu chorava em segredo,</p>
+                <p>Mergulhado na paciência</p>
+                <p>Que tive a dor de escolher,</p>
+                <p>E, sem você saber,</p>
+                <p>Eu continuei,</p>
+                <p>Buscando não te atingir com meus erros.</p>
+                <p>As cores morreram,</p>
+                <p>E as paletas só tinham vida</p>
+                <p>Quando, com você, se fazia meu dia.</p>
+                <p>Essas cartas</p>
+                <p>Que amassei antes de enviar</p>
+                <p>Jamais chegarão aos olhos,</p>
+                <p>Pois você não me merece,</p>
+                <p>Não a mim,</p>
+                <p>Mas coisa melhor.</p>
+                <p>E eu tive que decidir,</p>
+                <p>Sozinho e sem consentimento,</p>
+                <p>Para, no final, sorrir e agradecer.</p>
+                <br>
+                <p>Por quê?</p>
+                <br>
+                <p>Pelo menos somos amigos?</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="caneta">
+            <div class="contentPoema">
+                <h3>Caneta</h3>
+                <p>Minha caneta é um demônio</p>
+                <p>Que sussurra poesias no meu ouvido,</p>
+                <p>Grita caos em meio ao desabrigo</p>
+                <p>De minha própria mente.</p>
+                <p>Ela não teme o céu,</p>
+                <p>Feito de plástico entulhado,</p>
+                <p>Até as estrelas alcança.</p>
+                <p>Nem adora o inferno,</p>
+                <p>No qual faz sua morada.</p>
+                <p>Ela somente e unicamente me expressa</p>
+                <p>Sua repulsa à terra</p>
+                <p>Malcuidada, carcomida, devastada</p>
+                <p>Por vermes, míseros vermes.</p>
+                <p>Minha caneta sussurra verdades</p>
+                <p>Nas quais não querem acreditar.</p>
+                <p>Já cansei de pensar em me salvar.</p>
+                <p>Hoje desejo a todos, nesse jardim morto,</p>
+                <p>O inferno tragar.</p>
+                <br>
+                <p>Meu cérebro, dominado por esse demônio,</p>
+                <p>Hoje me culmina novamente.</p>
+                <p>Já fui um anjo implorando por arrependimento.</p>
+                <p>Desejei um mundo melhor.</p>
+                <p>Ofereci flores e curas para suas dores.</p>
+                <p>Já fui um anjo chorando sozinho</p>
+                <p>Nesse jardim de flores mortas,</p>
+                <p>Com mortos em seus arredores.</p>
+                <br>
+                <p>Hoje não posso ser um demônio,</p>
+                <p>Pois sou, das espécies, a pior.</p>
+                <p>De ti desbravei, de ti tirei, de ti esbanjei.</p>
+                <p>Não há locais dos quais eu não consumo.</p>
+                <p>Por isso, eu suplico:</p>
+                <p>Desejo a todos um feliz fim do mundo.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="hollow">
+            <div class="contentPoema">
+                <h3>Hollow</h3>
+                <p>Nossos passos abafados</p>
+                <p>Pelos corredores encharcados.</p>
+                <p>Corro das minhas dores,</p>
+                <p>Das falhas que cometi aquela vez...</p>
+                <br>
+                <p>SÓ AQUELA VEZ?!</p>
+                <p>Aquela, aquela, aquela, aquela, aquelas isoladas,</p>
+                <p>Todos os múltiplos casos solitários.</p>
+                <br>
+                <p>Nós fugimos em círculos,</p>
+                <p>Me persigo neste labirinto,</p>
+                <p>Pelas infinitas mágoas</p>
+                <p>Vindas de finitas falhas.</p>
+                <br>
+                <p>or manobras,</p>
+                <p>squivo dos vermes</p>
+                <p>ue devoram as minhas mentes.</p>
+                <br>
+                <p>Traços do que fui</p>
+                <p>Se esvaziam na minha frente.</p>
+                <p>Traças, por que ruís? (ruir)</p>
+                <p>Os sentimentos do que EU se sentimos (SENTE)</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="tempo">
+            <div class="contentPoema">
+                <h3>A tempo</h3>
+                <p>A tempo não tento algo novo,</p>
+                <p>Porém dizem há tempo:</p>
+                <p>Neste momento me movo.</p>
+                <br>
+                <p>Assim vejo esse tempo se gastar,</p>
+                <p>E, se talvez, meu tempo se passar,</p>
+                <p>As noites passando, não vejo se cansar.</p>
+                <br>
+                <p>Meu futuro ficou no passado,</p>
+                <p>Nesse mundo acelerado,</p>
+                <p>Cada um deseja vitória para seu lado.</p>
+                <br>
+                <p>Infelizmente, eu estava no meio, sem lar,</p>
+                <p>Neste momento, meu tempo fatídico veio a zerar.</p>
+                <p>Ao jovem envelhecido, não veio a ter tempo de se realizar.</p>
+                <br>
+                <p>Ao final, não concluí o meu sonho,</p>
+                <p>Pois não houve tempo.</p>
+                <p>Morto em momentos que vi o mundo calmo.</p>
+                <br>
+                <p>Aqueles que se puseram a falar:</p>
+                <p>“Havia tempo!” porém, ao me deixar,</p>
+                <p>Fizeram seu objetivo acelerar.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="eus">
+            <div class="contentPoema">
+                <h3>EuS</h3>
+                <p>Ele estava perdido,</p>
+                <p>Trançando um caminho,</p>
+                <p>Gratificado por estar sozinho,</p>
+                <p>Triste peregrino.</p>
+                <br>
+                <p>Suas roupas rasgadas,</p>
+                <p>Ele vestia trapos.</p>
+                <p>Ele, eu? Nós...</p>
+                <br>
+                <p>Nós estávamos perdidos,</p>
+                <p>Por algum motivo.</p>
+                <p>Eu, ferido por demasiada confiança;</p>
+                <p>Ele, ignorante, inapto à mudança.</p>
+                <br>
+                <p>Juntos, formávamos este muro.</p>
+                <p>A criança, ela chora</p>
+                <p>Por cada centímetro que construo.</p>
+                <br>
+                <p>Nosso mausoléu, assombrado,</p>
+                <p>Escutasse pelos corredores</p>
+                <p>Todas as dores</p>
+                <p>Das lembranças do amalgamado.</p>
+                <br>
+                <p>No dia que ELA chegou,</p>
+                <p>A criança parou,</p>
+                <p>O muro desabou.</p>
+                <br>
+                <p>Eu? Abracei a criança</p>
+                <p>E prometi que jamais abandonaria,</p>
+                <p>Menos ainda deixaria</p>
+                <p>Que um qualquer pudesse lhe alcançar.</p>
+                <br>
+                <p>A ela, eu olhei.</p>
+                <p>Admirei.</p>
+                <p>E dei vida ao que jazia em meu peito.</p>
+                <br>
+                <p>Ela, comigo,</p>
+                <p>Fazia um favor</p>
+                <p>E, sem o intuito, juntará as partes.</p>
+                <p>O nós sempre foi eu.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="promessas">
+            <div class="contentPoema">
+                <h3>Promessas</h3>
+                <p>Não queria entoar melancolia.</p>
+                <p>É culpa minha estar aqui.</p>
+                <p>Não desejo repassar essa sensação.</p>
+                <p>Prometo que tentei, EU PROMETO!</p>
+                <p>Prometo, não queria essa entonação.</p>
+                <p>Eu tentei escrever colorido,</p>
+                <p>Mudar as lentes do mundo que vivo.</p>
+                <p>Porém, melancolicamente, eu tentei</p>
+                <p>Ai de tal palavra chula carregar</p>
+                <p>Um peso sobre sua própria existência.</p>
+                <br>
+                <p>As alucinações vêm em minutos,</p>
+                <p>O sussurrar desses espíritos aumenta.</p>
+                <p>Daí, até o maior ateu, tais visões</p>
+                <p>Farão com que sua maior crença não seja na ciência.</p>
+                <p>Distinguir a realidade é fútil perante</p>
+                <p>O que há de ser nada além de algo tão real</p>
+                <p>Quanto todos os mundos vindos da minha mente.</p>
+                <br>
+                <p>“Tentei!”, bradava o corpo,</p>
+                <p>Que se debatia nas inebriantes sensações.</p>
+                <p>O tentar voltava novamente,</p>
+                <p>Carregado de frustrações. Tentar...</p>
+                <p>“Tente”, ouvia sussurrar; de si mesmo ouvia.</p>
+                <br>
+                <p>Lamentáveis tentativas...</p>
+                <p>Em minha cama, me sinto debilitado por isso.</p>
+                <p>As noites se tornam manhãs</p>
+                <p>E, em instantes, sucumbem ao clarão.</p>
+                <p>Ali, em carne, se deixa.</p>
+                <p>Não há mais alma a ser resgatada.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="luzes">
+            <div class="contentPoema">
+                <h3>Luzes</h3>
+                <p>Em momentos,</p>
+                <p>Baseio em pensamentos,</p>
+                <p>Esse sentimento,</p>
+                <p>Tão fútil quanto este texto.</p>
+                <br>
+                <p>Sinta estas frases consumir</p>
+                <p>Todo ser vivendo em ti,</p>
+                <p>Sua visão humana</p>
+                <p>Retirada pela claridade.</p>
+                <br>
+                <p>Antes isso fosse</p>
+                <p>Atos iluministas,</p>
+                <p>Mas não, resta lidar</p>
+                <p>Com esta vã vontade.</p>
+                <br>
+                <p>Infeliz mente, com grandes pensares,</p>
+                <p>Tão fortes quanto as luzes</p>
+                <p>Dos postes desta cidade,</p>
+                <p>Não iluminam os caminhos dos que têm pesares.</p>
+                <br>
+                <p>Estes, os quais, tristemente,</p>
+                <p>Fazem seus espelhos, seu caminho iluminá-los,</p>
+                <p>Por falsos ilusionistas agindo tal qual mágicos,</p>
+                <p>Encantando a ti com farsas de castelos ruídos.</p>
+                <br>
+                <p>A capital dos postes fracos</p>
+                <p>Consome essas pobres almas,</p>
+                <p>Prive elas de suas falhas,</p>
+                <p>Dos pecados humanos.</p>
+                <br>
+                <p>Desejo, inveja, vontade,</p>
+                <p>Tudo espelhado em seu cerne.</p>
+                <p>Cada lado do seu cérebro,</p>
+                <p>Cegado por essa luz de sentido macabro.</p>
+                <br>
+                <p>Sinto a ti, mero leitor,</p>
+                <p>Não deseja julgar a você.</p>
+                <p>Porém, encontre a luz do sol,</p>
+                <p>Não se engane por flashes.</p>
+                <br>
+                <p>Desses quais, bruxos os amaldiçoam,</p>
+                <p>Porém, por baixo,</p>
+                <p>Não há desejo de ascensão a ti.</p>
+                <p>Milagrosamente, eles estão ali.</p>
+                <br>
+                <p>Deus esteja à frente,</p>
+                <p>DA SUA vida,</p>
+                <p>Não a deles.</p>
+                <p>Vontade de benfeitor.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="pedra">
+            <div class="contentPoema">
+                <h3>A Pedra no Rio</h3>
+                <p>Há tempos, havia um homem</p>
+                <p>Junto de ti, carregava uma pedra.</p>
+                <p>Às margens de um lago, observava</p>
+                <p>Sua imagem espelhada no azul.</p>
+                <p>Sentia ali a tua alma.</p>
+                <br>
+                <p>Diário e em consecutivo,</p>
+                <p>Sentava e da pedra zelava,</p>
+                <p>Limpava, polia e a mantinha guardada,</p>
+                <p>Tão bela quanto no dia em que da terra foi tirada.</p>
+                <br>
+                <p>Em clareza, proclamava, taxado de histeria,</p>
+                <p>As marcas da pedra contam uma história.</p>
+                <p>Infeliz mundo, valorizou mais as flores.</p>
+                <p>Ao ver do homem, ela guardava valor maior</p>
+                <p>Do que qualquer rosa</p>
+                <p>Que foi cantada a mil amores.</p>
+                <br>
+                <p>Há tempos, ouvi de um colega</p>
+                <p>Que um homem,</p>
+                <p>Carregando consigo uma pedra,</p>
+                <p>Via sua imagem grisalha</p>
+                <p>No reflexo frágil de um lago.</p>
+                <br>
+                <p>O homem, solitário, morreu.</p>
+                <p>A pedra calcificou.</p>
+                <p>Não soube de onde veio,</p>
+                <p>Nem o valor de tal subsídio.</p>
+                <p>Afinal, era somente mais um louco,</p>
+                <p>Como todos os outros.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="Lusiadas">
+            <div class="contentPoema">
+                <h3>Lusiadas</h3>
+                <p>Cansei de poemas de lusíadas,</p>
+                <p>Poesias acústicas</p>
+                <p>Para suprir sua noite de núpcias.</p>
+                <p>Não vendo drogas felicitadas,</p>
+                <p>Muito menos verdades muito bem mascaradas.</p>
+                <p>Já andastes em baile de máscaras.</p>
+                <p>Viste horrores de suas verdades em camadas.</p>
+                <p>Entrego-me sem vendas,</p>
+                <p>Peço que leia com vendas</p>
+                <p>E sinta que não há falsificadores.</p>
+                <p>Não há romantismo em minhas falas.</p>
+                <p>Ai de meu passado me condenar.</p>
+                <p>Dizia a ele: “Não se perca”,</p>
+                <p>Mas cá já desisto de falar.</p>
+                <p>Genérico, farmacêutico até:</p>
+                <p>“Que brilho seu sorriso!</p>
+                <p>Me encanta teu brilho.</p>
+                <p>Você, humana, encanta a todos.</p>
+                <p>Porém, aqui declamo em cartas guiadas a ti,</p>
+                <p>Somente a ti, sua alma.</p>
+                <p>Não me encanto em óbvios.”</p>
+                <p>Cansei de lusíadas, já disse.</p>
+                <p>Não necessitas de mim,</p>
+                <p>Muito menos devia eu,</p>
+                <p>Mero e sobrevivente como a ti,</p>
+                <p>Necessitar lá, porém, ainda assim,</p>
+                <p>Minha parte utópica clama por falhas minhas.</p>
+                <p>Mostrar uma realidade melhorada.</p>
+                <p>Continuo a declamar a ti</p>
+                <p>Tudo que já queria declamar.</p>
+                <p>Necessário? Não, já sei a tua resposta.</p>
+                <p>Porém, ainda saiba: caso não fosse assim,</p>
+                <p>Não descansaria minha própria mente.</p>
+                <p>Isso não são declamações de paixão,</p>
+                <p>Muito menos desabafos.</p>
+                <p>Somente são minhas expressões em papel.</p>
+                <p>Guarde-as, cuide-as, quebre-as, responda-as.</p>
+                <p>Faça o que achar correto.</p>
+                <p>Somente saiba: todo riso seu me alegra.</p>
+                <p>Perdoe minhas falhas como ser.</p>
+                <p>Aceite minhas expressões como tuas.</p>
+                <br>
+                <p>— Isso nunca necessitou de resposta.</p>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="hide cardExibir" id="cara">
+            <div class="contentPoema">
+                <h3>A cara</h3>
+                <p>Conforme o tempo passa,</p>
+                <p>Cada cara que me faça</p>
+                <p>Se faz uma carapaça</p>
+                <p>Dos gritos em mordaça.</p>
+                <br>
+                <p>Dentes rangendo</p>
+                <p>Refletem a angústia</p>
+                <p>Que eu continuo sendo.</p>
+                <br>
+                <p>A mim, espelho do oráculo,</p>
+                <p>Tornei-me cacos</p>
+                <p>Dos atos falhos</p>
+                <p>Que nunca tiveram intuito de machucá-lo.</p>
+                <br>
+                <p>Mas, ao remetente interno,</p>
+                <p>Seus pensamentos destinatários</p>
+                <p>Ecoavam de forma mensageira.</p>
+                <br>
+                <p>Pela transparência,</p>
+                <p>Conseguiu-se ver as raízes da minha consciência,</p>
+                <p>As feridas-heranças que me seguem,</p>
+                <p>Que, profetizando meu destino, concluem.</p>
+                <br>
+                <p>Ô, oráculo, definiste nossos caminhos.</p>
+                <p>Morreremos iguais,</p>
+                <p>Sozinhos.</p>
+            </div>
+           <i class="close"></i>
+        </div>
+    </div>
+</body>
+
+
+<script src="script.js"></script>
+<script src="carousel.js"></script>
+
+</html>
