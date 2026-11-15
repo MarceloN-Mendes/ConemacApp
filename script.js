@@ -36,3 +36,6 @@ document.addEventListener("keydown", (event) => {
         document.querySelectorAll(".cardExibir:not(.hide)").forEach(closePoem);
     }
 });
+
+/* input */
+

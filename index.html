@@ -26,6 +26,7 @@
                     <article class="cardintrodução"><p>Olá, Bom dia, Boa tarde, Boa noite caro leitor, sou Marcelo Mendes escritor dos poemas que seguem abaixo. </p></article>
                     <article class="cardintrodução"><p>Espero que leia com calma e sinta cada escrita, e que retire daqui uma parte boa de mim com alguma reflexão ou ajuda em seus sentimentos.</p></article>
                     <article class="cardintrodução"><p>Eu trato meus poemas como parte da minha alma, sendo expressões dos meus pensamentos e sentimentos, eu espero que goste de mim e os pedaços que deixo aqui.</p></article>
+                    <article class="cardintrodução"><p>Textos e outros poemas serão publicados aqui e no instagram @sdarta__</p></article>
                 </div>
             </div>
             <button class="carousel-btn next" type="button" aria-label="Próxima introdução">&#10095;</button>
@@ -61,7 +62,36 @@
         </div>
     </main>
     <footer id="rodape" class="container">
+        <section id="comentarios">
+            <h2>Deixe seu pedaço</h2>
 
+            <p>
+                Se algum poema despertou algo em você,
+                deixe suas palavras aqui.
+            </p>
+
+            <form id="formComentario">
+                <input
+                    type="text"
+                    id="nomeComentario"
+                    placeholder="Seu nome (opcional)"
+                    maxlength="50"
+                >
+
+                <textarea
+                    id="textoComentario"
+                    placeholder="Escreva seu comentário..."
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <button type="submit" id="enviarComentario">
+                    Enviar comentário
+                </button>
+
+                <p id="mensagemComentario"></p>
+            </form>
+        </section>
     </footer>
     <div id="cardExibir">
         <div class="hide cardExibir" id="caridade">
@@ -617,10 +647,12 @@
            <i class="close"></i>
         </div>
     </div>
+
 </body>
 
 
 <script src="script.js"></script>
 <script src="carousel.js"></script>
+<script type="module" src="firebase.js"></script>
 
 </html>
